@@ -6,7 +6,7 @@ class SignupUseCase(
     private val repository: AuthRepository
 ) {
 
-    suspend operator fun invoke() {
-        return repository.signup()
+    suspend operator fun invoke(email: String, password: String) {
+        return repository.signup(email, password)
     }
 }
