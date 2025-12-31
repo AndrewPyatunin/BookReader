@@ -22,3 +22,5 @@ dependencyResolutionManagement {
 rootProject.name = "Book Reader"
 include(":app")
 include(":bookreader-domain")
+include(":bookreader-database")
+include(":bookreader-data")

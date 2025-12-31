@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "403687338962",
+    "project_id": "bookreader-49d02",
+    "storage_bucket": "bookreader-49d02.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:403687338962:android:96cebb6d9c236406f40e0b",
+        "android_client_info": {
+          "package_name": "com.andreich.bookreader"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "403687338962-r2tesmn2mohrj4phi8mpfecmbclm5mpr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.andreich.bookreader",
+            "certificate_hash": "12a1d9097c2673bd39f159140c26da3a1fe04346"
+          }
+        },
+        {
+          "client_id": "403687338962-phokd64r996vn38huauiqheo4tqh5l5l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBP9RKmM_C6xBHzqcS6vTBYJ7tL6H6iRqQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "403687338962-phokd64r996vn38huauiqheo4tqh5l5l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
