@@ -8,5 +8,5 @@ interface AuthRepository {
 
     suspend fun logout()
 
-    suspend fun signup()
+    suspend fun signup(email: String, password: String)
 }
