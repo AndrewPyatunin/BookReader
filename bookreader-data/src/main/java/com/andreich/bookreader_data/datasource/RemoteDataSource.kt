@@ -1,12 +1,13 @@
 package com.andreich.bookreader_data.datasource
 
 import com.andreich.bookreader_domain.model.Book
+import kotlinx.coroutines.flow.Flow
 
 interface RemoteDataSource {
 
-    suspend fun getAllBooks(): List<Book>
+    fun getAllBooks(): Flow<List<Book>>
 
     suspend fun getBook(): Book
 
-    suspend fun uploadBook()
+    suspend fun uploadBook(book: Book)
 }
