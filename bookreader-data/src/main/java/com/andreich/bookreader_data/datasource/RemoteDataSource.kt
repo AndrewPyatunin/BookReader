@@ -7,7 +7,5 @@ interface RemoteDataSource {
 
     fun getAllBooks(): Flow<List<Book>>
 
-    suspend fun getBook(): Book
-
     suspend fun uploadBook(book: Book)
 }
