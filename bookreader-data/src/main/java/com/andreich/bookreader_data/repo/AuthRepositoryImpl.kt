@@ -1,6 +1,7 @@
 package com.andreich.bookreader_data.repo
 
 import com.andreich.bookreader_data.datasource.LocalDataSource
+import com.andreich.bookreader_domain.model.User
 import com.andreich.bookreader_domain.repo.AuthRepository
 
 class AuthRepositoryImpl(
@@ -21,6 +22,10 @@ class AuthRepositoryImpl(
 
     override suspend fun signup(email: String, password: String) {
         localDataSource.signup(email, password)
+    }
+
+    override suspend fun editUserInfo(user: User): User {
+        return localDataSource.editUser(user)
     }
 
 }

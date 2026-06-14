@@ -1,6 +1,8 @@
+import org.gradle.kotlin.dsl.libs
+
 plugins {
     alias(libs.plugins.android.library)
-    alias(libs.plugins.kotlin.android)
+//    alias(libs.plugins.kotlinx.android)
 }
 
 android {
@@ -29,9 +31,6 @@ android {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
-    kotlinOptions {
-        jvmTarget = "11"
-    }
 }
 
 dependencies {
@@ -48,6 +47,7 @@ dependencies {
     implementation(libs.androidx.credentials.play.services)
     implementation(libs.firebase.auth)
     implementation(platform(libs.firebase.bom))
+    implementation(libs.firebase.firestore)
 
     implementation(project(":bookreader-domain"))
 }
