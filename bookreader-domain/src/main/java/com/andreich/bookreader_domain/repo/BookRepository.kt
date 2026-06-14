@@ -14,4 +14,6 @@ interface BookRepository {
     suspend fun getBooks(): Flow<List<Book>>
 
     suspend fun removeBook(book: Book)
+
+    suspend fun editFont(font: Int)
 }

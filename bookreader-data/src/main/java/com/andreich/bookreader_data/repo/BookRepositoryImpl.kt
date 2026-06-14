@@ -5,7 +5,6 @@ import com.andreich.bookreader_data.datasource.RemoteDataSource
 import com.andreich.bookreader_domain.model.Book
 import com.andreich.bookreader_domain.repo.BookRepository
 import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.filter
 import kotlinx.coroutines.flow.map
 
 class BookRepositoryImpl(
@@ -34,6 +33,10 @@ class BookRepositoryImpl(
     }
 
     override suspend fun removeBook(book: Book) {
+        TODO("Not yet implemented")
+    }
+
+    override suspend fun editFont(font: Int) {
         TODO("Not yet implemented")
     }
 }
